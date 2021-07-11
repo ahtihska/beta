@@ -1,0 +1,201 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: url("https://cdn.discordapp.com/attachments/852609611692245032/860200123808350258/wp6451487_Large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  
+}
+
+video-grid{
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    
+    }
+
+.main__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    border: 30px  #ffffff;
+    border-radius: 50px;
+    
+    
+}
+
+.main__right {
+    flex: 0.2;
+}
+
+.main__videos
+{    
+    opacity: 0.8;
+
+}
+.main__videos{
+    flex-grow: 1;
+    background-color: #A5539D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main__controls {
+    display: flex;
+    background-color: #7c5295;
+    color: #2B092A;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    justify-content: space-between;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}   
+
+.main__controls__block{
+    display: flex;
+   
+}
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+  
+}
+
+.main__controls__button:hover {
+    background-color: #ebaefd;
+    border-radius: 100px;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.main__controls__button:active {
+    background-color: #ebaefd;
+    border-radius: 100px;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.main__controls__button i {
+    font-size: 20px;
+    
+}
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+    background-color :#E69ACB;
+    border:  10px solid #F1C4E1;
+    border-radius: 60px;
+    position: fixed;
+    top: 180px;
+    bottom: 120px;
+    right: 60px;
+    width: 300px;
+}
+
+.main__header {
+    padding-top: 5px;
+    color:#232946;
+    text-align: center;
+}
+
+.main__chat_window {
+    flex-grow: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.messages{
+    list-style: none;
+}
+.message {
+    margin-left: 5px;
+    padding: 20px 40px;
+    color: white;
+    background-color: #652D5D;
+    border-radius: 100px;
+    margin-top: 6px;
+}
+
+.main__message_container input {
+    margin-bottom: 10px;
+    margin-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    flex-grow: 1;
+    background-color: #652D5D;
+    border-radius: 100px;
+    border: 1px solid #652D5D;
+    color: #ffffff;
+}
+
+.leave_meeting {
+    color: hsl(71, 83%, 61%);
+}
+
+.leave_meeting:hover {
+    color: #2F0E2B;
+}
+
+
+.unmute, .stop {
+    color: #1A0A18;
+}
+.messages {
+    list-style: none;
+}
+
+.main__message_container {
+    color: black;
+}
+@media (max-width: 992px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  /*//////////////////////////////////////////////////////////////////
+  [ responsive ]*/
+  
+  @media (max-width: 480px) {
+    .wrap-login100 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
